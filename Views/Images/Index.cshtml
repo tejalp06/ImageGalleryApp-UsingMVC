@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ImageGalleryAppMVC.Models.Image>
+
+    <h2>My Image Gallery</h2>
+    <a href="/Images/Upload">Upload New Images</a>
+    <hr />
+
+    @foreach(var image in Model)
+{
+    <div>
+        <img src="@image.Url"width="200"/>
+    </div>
+}
